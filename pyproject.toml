@@ -1,0 +1,27 @@
+[project]
+name = "fastapi-cloundrun-template"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "ruuu-shan", email = "sarasvati.rigveda.1028@gmail.com" }
+]
+dependencies = [
+    "fastapi>=0.110.1",
+    "uvicorn>=0.29.0",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fastapi_cloundrun_template"]
